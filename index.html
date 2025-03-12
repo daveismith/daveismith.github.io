@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidiansmith.ca</title>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background: rgb(84, 84, 84);
+    color: rgb(255, 255, 255);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 10px 0 0 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: light;
+    color: rgb(192, 192, 192);
+  }
+
+  span a {
+    font-size: 1.5rem;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 0.83rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  span a:hover {
+    color: #ffffff;
+  }
+
+  @keyframes float {
+  	0% {
+  		transform: translatey(0px);
+  	}
+  	50% {
+  		transform: translatey(-10px);
+  	}
+  	100% {
+  		transform: translatey(0px);
+  	}
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+  	animation: float 4s ease-in-out infinite;
+  }
+
+  .avatar img {
+    width: 110%;
+    margin-left: -6%;
+    margin-top: -5%;
+  }
+
+  .content {
+	  width: 100%;
+	  max-width: 600px;
+	  padding: 20px 40px;
+	  box-sizing: border-box;
+	  text-align: center;
+  }
+
+  .credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+  }
+
+  .credit a {
+    color: #cccccc;
+  }
+
+</style>
+    <script src="https://kit.fontawesome.com/6c08ba4538.js" crossorigin="anonymous"></script>    
+  </head>
+  <body>
+	  <div class="container">
+      <div class="avatar">
+        <a href=""><img src="david.png" alt="David Smith" /></a>
+		  </div>
+  	  <div class="content">
+        <h1>David Smith</h1>
+        <p>
+          <span><a href="https://github.com/daveismith/" target="_blank"><i class="fa fa-github"></i></a></span>
+          <span><a href="https://bitbucket.org/daveismith/" target="_blank"><i class="fa fa-bitbucket"></i></a></span>
+          <span><a href="https://www.instagram.com/daveismyth/" target="_blank"><i class="fa fa-instagram"></i></a></span>
+        </p>
+      </div>
+      <div class="credit">
+        <p>design by <a href="https://codepen.io/MarioDesigns/">Mario Duarte</a></p>
+      </div>
+    </div>
+  </body>
+</html>
